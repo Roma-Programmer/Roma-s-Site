@@ -15,10 +15,17 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      let age = prompt("Сколько тебе лет?", 100);
+
+      alert(`Тебе ${age} лет!`); // Тебе 100 лет!
+    </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="stule.css" />
     <style>
       .rounded-img {
         width: 60%;
@@ -29,6 +36,9 @@
       }
       .img-hover {
         background-color: rgba(0, 0, 0, 0.1);
+      }
+      hr {
+        color: rgb(7, 202, 95);
       }
     </style>
   </head>
@@ -65,8 +75,13 @@
       <div class="row">
         <div class="col-lg-6 mx-auto">
           <img class="rounded-img img-hover" src="img.jpg" alt="Roma" />
-          <h1 class="fw-light">Roman Sopot</h1>
-          <p class="lead text-muted">
+          <h1 class="fw-light">
+            <hr class="primary" />
+            Roman Sopot
+            <hr />
+            <strong>Programmer</strong>
+          </h1>
+          <p class="lead text-muted heading">
             I like learning languages.I will be a
             programmer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
           </p>
